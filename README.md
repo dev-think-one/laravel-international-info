@@ -24,6 +24,16 @@ php artisan vendor:publish --provider="InternationalInfo\ServiceProvider" --tag=
 
 ## Usage
 
+```
+InternationalInfo::country()->list();
+InternationalInfo::country()->list('AI'); // Anguilla
+
+$country = InternationalInfo::country();
+$country->findISOCode('GB') // 'GB'
+$country->findISOCode('gb') // 'GB'
+$country->findISOCode('United Kingdom (UK)') // 'GB'
+```
+
 ## Credits
 
 - [![Think Studio](https://yaroslawww.github.io/images/sponsors/packages/logo-think-studio.png)](https://think.studio/)

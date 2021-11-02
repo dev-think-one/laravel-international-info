@@ -24,6 +24,7 @@ class CountryTest extends TestCase
 
         $this->assertNull($country->findISOCode('UK'));
         $this->assertEquals('GB', $country->findISOCode('GB'));
+        $this->assertEquals('GB', $country->findISOCode('gb'));
         $this->assertEquals('GB', $country->findISOCode('United Kingdom (UK)'));
     }
 }
