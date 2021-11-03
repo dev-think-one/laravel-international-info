@@ -24,7 +24,7 @@ php artisan vendor:publish --provider="InternationalInfo\ServiceProvider" --tag=
 
 ## Usage
 
-```
+```injectablephp
 InternationalInfo::country()->list();
 InternationalInfo::country()->list('AI'); // Anguilla
 
