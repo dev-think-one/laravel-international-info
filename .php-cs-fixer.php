@@ -2,11 +2,11 @@
 
 $finder = PhpCsFixer\Finder::create()
                            ->notPath('bootstrap/*')
-                           ->notPath('storage/*')
                            ->in([
                                __DIR__ . '/src',
                                __DIR__ . '/config',
                                __DIR__ . '/tests',
+                               __DIR__ . '/storage',
                            ])
                            ->name('*.php')
                            ->notName('*.blade.php')
