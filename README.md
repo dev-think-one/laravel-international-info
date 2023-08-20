@@ -1,23 +1,25 @@
 # International information data set.
 
-[![Packagist License](https://img.shields.io/packagist/l/yaroslawww/laravel-international-info?color=%234dc71f)](https://github.com/yaroslawww/laravel-international-info/blob/master/LICENSE.md)
-[![Packagist Version](https://img.shields.io/packagist/v/yaroslawww/laravel-international-info)](https://packagist.org/packages/yaroslawww/laravel-international-info)
-[![Total Downloads](https://img.shields.io/packagist/dt/yaroslawww/laravel-international-info)](https://packagist.org/packages/yaroslawww/laravel-international-info)
-[![Build Status](https://scrutinizer-ci.com/g/yaroslawww/laravel-international-info/badges/build.png?b=master)](https://scrutinizer-ci.com/g/yaroslawww/laravel-international-info/build-status/master)
-[![Code Coverage](https://scrutinizer-ci.com/g/yaroslawww/laravel-international-info/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/yaroslawww/laravel-international-info/?branch=master)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/yaroslawww/laravel-international-info/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/yaroslawww/laravel-international-info/?branch=master)
+![Packagist License](https://img.shields.io/packagist/l/think.studio/laravel-international-info?color=%234dc71f)
+[![Packagist Version](https://img.shields.io/packagist/v/think.studio/laravel-international-info)](https://packagist.org/packages/think.studio/laravel-international-info)
+[![Total Downloads](https://img.shields.io/packagist/dt/think.studio/laravel-international-info)](https://packagist.org/packages/think.studio/laravel-international-info)
+[![Build Status](https://scrutinizer-ci.com/g/dev-think-one/laravel-international-info/badges/build.png?b=main)](https://scrutinizer-ci.com/g/dev-think-one/laravel-international-info/build-status/main)
+[![Code Coverage](https://scrutinizer-ci.com/g/dev-think-one/laravel-international-info/badges/coverage.png?b=main)](https://scrutinizer-ci.com/g/dev-think-one/laravel-international-info/?branch=main)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/dev-think-one/laravel-international-info/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/dev-think-one/laravel-international-info/?branch=main)
+
+Easy get Country ISO code/State/PhoneCode.
 
 ## Installation
 
 Install the package via composer:
 
-```bash
-composer require yaroslawww/laravel-international-info
+```shell
+composer require think.studio/laravel-international-info
 ```
 
 You can publish the config file with:
 
-```bash
+```shell
 php artisan vendor:publish --provider="InternationalInfo\ServiceProvider" --tag="config"
 # optional
 php artisan vendor:publish --provider="InternationalInfo\ServiceProvider" --tag="storage"
@@ -25,7 +27,7 @@ php artisan vendor:publish --provider="InternationalInfo\ServiceProvider" --tag=
 
 ## Usage
 
-```injectablephp
+```php
 InternationalInfo::country()->list();
 InternationalInfo::country()->list('AI'); // Anguilla
 
